@@ -3,6 +3,7 @@ import bridge from '@vkontakte/vk-bridge';
 import { View, ScreenSpinner, AdaptivityProvider, AppRoot, ConfigProvider, SplitLayout, SplitCol } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import HelloPage from './panels/helloPage';
+import MainPage from './panels/mainPage';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -29,7 +30,7 @@ const App = () => {
 					<SplitLayout popout={popout}>
 						<SplitCol>
 							<View activePanel={activePanel}>
-								<HelloPage id={activePanel} fetchedUser={fetchedUser}/>
+								<MainPage id={activePanel}/>
 							</View>
 						</SplitCol>
 					</SplitLayout>
