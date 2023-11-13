@@ -9,38 +9,48 @@ const MainPage = () =>{
             <Div className="main">
                 <Div className="week">
                     <Div className="monday">
-                        <Text>пн</Text>
+                        <Text className="textDays">пн</Text>
                         <Div className="dayCard"></Div>
                     </Div>
                     <Div className="thursday">
-                        <Text>вт</Text>
+                        <Text className="textDays">вт</Text>
                         <Div className="dayCard"></Div>
                     </Div>
                     <Div className="wendsday">
-                        <Text>ср</Text>
+                        <Text className="textDays">ср</Text>
                         <Div className="dayCard"></Div>
                     </Div>
                     <Div className="thirdsday">
-                        <Text>чт</Text>
+                        <Text className="textDays">чт</Text>
                         <Div className="dayCard"></Div>
                     </Div>
                     <Div className="friday">
-                        <Text>пт</Text>
+                        <Text className="textDays">пт</Text>
                         <Div className="dayCard"></Div>
                     </Div>
                     <Div className="saturday">
-                        <Text>сб</Text>
+                        <Text className="textDays">сб</Text>
                         <Div className="dayCard"></Div>
                     </Div>
                     <Div className="sunday">
-                        <Text>вс</Text>
+                        <Text className="textDays">вс</Text>
                         <Div className="dayCard"></Div>
                     </Div>
                 </Div>
                 <Div className="textDiv">
                     <Title className="textFeel" level="2">Как ты себя чувствуешь?</Title>
                 </Div>
-                <Div className="mainCard"></Div>
+                <Div className="mainCard">
+                    <Div className="mainAnimal"></Div>
+                    <Div className="moodTrack">
+                        <Div className="bad-good">
+                            <Div>Плохо</Div>
+                            <Div>Хорошо</Div>
+                        </Div>
+                        <Div className="progress">Индикатор</Div>
+                    </Div>
+                    <Div className="continueButton"></Div>
+                </Div>
                 <Div className="menuButtons">
                     <Div className="galery"></Div>
                     <Div className="grafik"></Div>

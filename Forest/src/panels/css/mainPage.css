@@ -102,3 +102,33 @@
     border-radius: 10px;
     padding: 0;
 }
+
+.textDays{
+    font-family: Comfortaa;
+    text-align: center;
+    padding-bottom: 5px;
+    color: #3F614E;
+}
+
+.mainAnimal{
+    margin-top: 31px;
+    width: 109px;
+    height: 181px;
+    background-color: aqua;
+    padding: 0;
+}
+
+.moodTrack{
+    width: 239px;
+    height: 60px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.bad-good{
+    display: flex;
+    padding: 0;
+    justify-content: space-between
+}
