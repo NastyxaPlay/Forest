@@ -45,6 +45,10 @@
     background: #9BB789;
     text-align: center;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menuButtons{
@@ -58,7 +62,7 @@
     padding: 0;
 }
 
-.menuButtons > div{
+.menuButtons div{
     width: 46px;
     height: 40px;
     background-repeat: no-repeat;
@@ -67,16 +71,16 @@
 }
 
 .galery{
-    background-image: url(../../img/галлерея.png);
+    background-image: url(../../img/галлерея.svg);
     margin-left: 30px;
 }
 
 .grafik{
-    background-image: url(../../img/график.png);
+    background-image: url(../../img/график.svg);
 }
 
 .calendary{
-    background-image: url(../../img/календарь.png);
+    background-image: url(../../img/календарь.svg);
 }
 
 .week div>text{
@@ -88,7 +92,7 @@
     text-align: center;
 }
 
-.week > div{
+.monday,.thursday,.wendsday,.thirdsday,.friday,.saturday,.sunday{
     padding: 0;
     width: 34px;
     height: 80px;
@@ -103,6 +107,25 @@
     padding: 0;
 }
 
+.backArrow, .nextArrow{
+    width: 18px;
+    height: 30px;
+    padding: 0;
+    margin-top: 21px;
+}
+
+.backArrow{
+    background-image: url(../../img/назадСтрелка.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nextArrow{
+    background-image: url(../../img/впередСтрелка.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .textDays{
     font-family: Comfortaa;
     text-align: center;
@@ -114,21 +137,57 @@
     margin-top: 31px;
     width: 109px;
     height: 181px;
-    background-color: aqua;
     padding: 0;
+    margin-bottom: 8px;
+    background-image: url(../../img/заяцНейтр.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .moodTrack{
     width: 239px;
     height: 60px;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     padding: 0;
+    justify-content: space-between;
+    margin-bottom: 29px;
 }
 
 .bad-good{
     display: flex;
     padding: 0;
     justify-content: space-between
+}
+
+.bad-good div{
+    padding: 0;
+    font-family:Comfortaa;
+}
+
+.bad{
+    color: red;
+}
+
+.good{
+    color: rgb(255, 255, 255);
+}
+
+.progress{
+    padding: 0;
+}
+
+
+.continueButtonText{
+    font-weight: bold;
+    color: #005020;
+    font-family:Comfortaa;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+
+.continueButtonText:hover{
+    text-decoration: none;
 }

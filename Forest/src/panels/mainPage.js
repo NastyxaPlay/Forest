@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Panel, Div, Title, Text} from "@vkontakte/vkui";
+import {Panel, Div, Title, Text, Link} from "@vkontakte/vkui";
 import './css/mainPage.css';
 
 const MainPage = () =>{
@@ -8,6 +8,7 @@ const MainPage = () =>{
         <Panel id="home"> 
             <Div className="main">
                 <Div className="week">
+                    <Link><Div className="backArrow"></Div></Link>
                     <Div className="monday">
                         <Text className="textDays">пн</Text>
                         <Div className="dayCard"></Div>
@@ -36,6 +37,7 @@ const MainPage = () =>{
                         <Text className="textDays">вс</Text>
                         <Div className="dayCard"></Div>
                     </Div>
+                    <Link><Div className="nextArrow"></Div></Link>
                 </Div>
                 <Div className="textDiv">
                     <Title className="textFeel" level="2">Как ты себя чувствуешь?</Title>
@@ -44,17 +46,19 @@ const MainPage = () =>{
                     <Div className="mainAnimal"></Div>
                     <Div className="moodTrack">
                         <Div className="bad-good">
-                            <Div>Плохо</Div>
-                            <Div>Хорошо</Div>
+                            <Div className="bad">Плохо</Div>
+                            <Div className="good">Хорошо</Div>
                         </Div>
                         <Div className="progress">Индикатор</Div>
                     </Div>
-                    <Div className="continueButton"></Div>
+                    <Div className="continueButton">
+                        <Link className="continueButtonText">Продолжить</Link>
+                    </Div>
                 </Div>
                 <Div className="menuButtons">
-                    <Div className="galery"></Div>
-                    <Div className="grafik"></Div>
-                    <Div className="calendary"></Div>
+                    <Link><Div className="galery"></Div></Link>
+                    <Link><Div className="grafik"></Div></Link>
+                    <Link><Div className="calendary"></Div></Link>
                 </Div>
             </Div>
         </Panel>
