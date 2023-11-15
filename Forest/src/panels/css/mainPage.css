@@ -107,6 +107,24 @@
     padding: 0;
 }
 
+.dayCard{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.numberDay{
+    font-family: Comfortaa;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 0em;
+    color: #BDDAAE;
+    margin-bottom: 3px;
+    margin-right: 4px;
+
+}
+
 .backArrow, .nextArrow{
     width: 18px;
     height: 30px;
