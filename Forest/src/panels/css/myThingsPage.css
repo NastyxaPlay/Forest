@@ -1,0 +1,132 @@
+.mainThings{
+    width: 375px;
+    height: 667px;
+    background: #F3FAFE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+}
+
+.myThings{
+    /* width: 174px; */
+    width: 310px;
+    height: 27px;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #005020;
+    margin-top: 29px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.discriptionThing{
+    width: 303px;
+    height: 248px;
+    border-radius: 20px;
+    background: #E4E5C2;
+    margin-top: 20px;
+}
+
+.discriptionThing span{
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 19px 21px;
+    color: #005020;
+}
+
+.howFeelThisEm{
+    width: 330px;
+    height: 22px;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #005020;
+    padding: 0;
+    margin-top: 46px;
+}
+
+.choiceEmState{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 27px;
+}
+
+.choiceEmState div{
+    width: 134px;
+    height: 30px;
+    border-radius: 9px;
+    border: 4px solid #9FB98A;
+    padding: 0;
+    font-family: Comfortaa;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #005020;
+}
+
+.takePhoto{
+    width: 196px;
+    height: 40px;
+    border-radius: 9px;
+    background: #3C5F4C;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFF4CE;
+    margin-top: 39px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.saveWithoutPhoto{
+    width: 192px;
+    height: 18px;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3C5F4C;
+    margin-top: 14px;
+    padding: 0;
+}
+
+.vetVerx{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../img/веточкаВерхняя.svg);
+    width: 125px;
+    height: 264px;
+    position: absolute;
+    top: -5px;
+    left: -30px;
+}

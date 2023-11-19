@@ -68,3 +68,49 @@
 .continueButtonTextChoice:hover{
     text-decoration: none;
 }
+
+.mainCardChoice > div{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 108px;
+    width: 100px;
+}
+
+.mainCardChoice > div div{
+    padding: 0;
+    height: 90px;
+    width: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mainCardChoice > div span{
+    font-family: Comfortaa;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.neytral{
+    background-image: url(../../img/заяцНейтр.svg);
+}
+
+.sad{
+    background-image: url(../../img/заяцГрусть.svg);
+}
+
+.angry{
+    background-image: url(../../img/заяцЗлой.svg);
+}
+
+.happy{
+    background-image: url(../../img/заяцРадость.svg);
+}
+
+.fear{
+    background-image: url(../../img/заяцСтрах.svg);
+}

@@ -11,11 +11,26 @@ const choiceEmPage = () =>{
                     <Title className="textQue" level="2">Какую эмоцию испытываешь?</Title>
                 </Div>
                 <Div className="mainCardChoice">
-                    <Div className="neytral"></Div>
-                    <Div className="sad"></Div>
-                    <Div className="angry"></Div>
-                    <Div className="happy"></Div>
-                    <Div className="fear"></Div>
+                    <Div>
+                        <Div className="neytral"></Div>
+                        <Text>Нейтрально</Text>
+                    </Div>
+                    <Div>
+                        <Div className="sad"></Div>
+                        <Text>Грусть</Text>
+                    </Div>
+                    <Div>
+                        <Div className="angry"></Div>
+                        <Text>Злость</Text>
+                    </Div>
+                    <Div>
+                        <Div className="happy"></Div>
+                        <Text>Радость</Text>
+                    </Div>
+                    <Div>
+                        <Div className="fear"></Div>
+                        <Text>Страх</Text>
+                    </Div>
                 </Div>
                 <Div className="continueButtonChoice">
                     <Link className="continueButtonTextChoice">Продолжить</Link>
