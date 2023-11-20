@@ -7,6 +7,7 @@ import HelloPage from './panels/helloPage';
 import MainPage from './panels/mainPage';
 import ChoiceEmPage from './panels/choiceEmPage';
 import MyThingsPage from './panels/myThingsPage';
+import GalleryMoodPage from './panels/galleryMoodPage';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -35,7 +36,7 @@ const App = () => {
 					<SplitLayout popout={popout}>
 						<SplitCol>
 							<View activePanel={activePanel}>
-								<HelloPage id={activePanel}/>
+								<ChoiceEmPage id={activePanel}/>
 							</View>
 						</SplitCol>
 					</SplitLayout>
