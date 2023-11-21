@@ -63,11 +63,21 @@ const MainPage = () =>{
                             <Div className="bad">Плохо</Div>
                             <Div className="good">Хорошо</Div>
                         </Div>
-                        <Div className="progress">Индикатор</Div>
+                        <Div className="progress">
+                            <Div></Div>
+                            <Div></Div>
+                            <Div></Div>
+                            <Div></Div>
+                            <Div></Div>
+                            <Div></Div>
+                            <Div></Div>
+                            <Div></Div>
+                            <Div></Div>
+                            <Div></Div>
+                            <Div></Div>
+                        </Div>
                     </Div>
-                    <Div className="continueButton">
-                        <Link className="continueButtonText">Продолжить</Link>
-                    </Div>
+                   <Link><Div className="continueButton">Продолжить</Div></Link>
                 </Div>
                 <Div className="menuButtons">
                     <Link><Div className="galery"></Div></Link>

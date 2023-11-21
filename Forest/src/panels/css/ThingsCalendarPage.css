@@ -1,0 +1,114 @@
+.mainThingsCalendar{
+    width: 375px;
+    height: 667px;
+    background: #EFF9FE;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.mainThingsCalendar div{
+    padding: 0;
+}
+
+.rectangleImage{
+    background: linear-gradient(180deg, #A0BA8A, #3F604D);
+    width: 217px;
+    height: 183px;
+    border-radius: 20px;
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.imageThingsCalendar{
+    background-image: url(../../img/заяцНейтр.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 88px;
+    height: 147px;
+}
+
+.titleAboutThingsCalendar{
+    color: #005020;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    width: 310px;
+}
+
+.textAboutThings div{
+    color: #005020;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.textAboutThings{
+    width: 270px;
+    height: 281px;
+    margin-top: 22px;
+}
+
+.textAboutThings > :nth-child(2){
+    margin-top: 22px;
+}
+
+.buttonThingsCalendar{
+    width: 196px;
+    height: 40px;
+    border-radius: 9px;
+    background: #3C5F4C;
+    color: #FFF4CE;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+    z-index: 1;
+}
+
+.linkButtonThCal{
+    z-index: 1;
+}
+
+.linkButtonThCal:hover{
+    text-decoration: none;
+}
+
+.backVetkaVerx{
+    width: 135px;
+    height: 281px;
+    background-image: url("../../img/веточкаФонПрозрачнаяНаверху.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -20px;
+    top: -30px;
+}
+
+.backVetkaNiz{
+    width: 242px;
+    height: 517px;
+    background-image: url("../../img/веточкаФонПрозрачнаяВнизу.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}

@@ -14,9 +14,9 @@ const myThingsPage = () =>{
                 </Div>
                 <Div className="howFeelThisEm">Как ощущается эта эмоция?</Div>
                 <Div className="choiceEmState">
-                    <Link><Div>Спокойствие</Div></Link>
-                    <Link><Div>Апатия</Div></Link>
-                    <Link><Div>Равнодушие</Div></Link>
+                    <Link><Div className="stateEm1">Спокойствие</Div></Link>
+                    <Link><Div className="stateEm2">Апатия</Div></Link>
+                    <Link><Div className="stateEm3">Равнодушие</Div></Link>
                 </Div>
                 <Link><Div className="takePhoto">Сделать фото</Div></Link>
                 <Link><Div className="saveWithoutPhoto">Сохранить без фото</Div></Link>
