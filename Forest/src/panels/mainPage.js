@@ -12,43 +12,43 @@ const MainPage = () =>{
                     <Div className="monday">
                         <Text className="textDays">пн</Text>
                         <Div className="dayCard">
-                            <Text className="numberDay">1</Text>
+                            <Text className="numberDayMain">1</Text>
                         </Div>
                     </Div>
                     <Div className="thursday">
                         <Text className="textDays">вт</Text>
                         <Div className="dayCard">
-                            <Text className="numberDay">2</Text>
+                            <Text className="numberDayMain">2</Text>
                         </Div>
                     </Div>
                     <Div className="wendsday">
                         <Text className="textDays">ср</Text>
                         <Div className="dayCard">
-                            <Text className="numberDay">3</Text>
+                            <Text className="numberDayMain">3</Text>
                         </Div>
                     </Div>
                     <Div className="thirdsday">
                         <Text className="textDays">чт</Text>
                         <Div className="dayCard">
-                            <Text className="numberDay">4</Text>
+                            <Text className="numberDayMain">4</Text>
                         </Div>
                     </Div>
                     <Div className="friday">
                         <Text className="textDays">пт</Text>
                         <Div className="dayCard">
-                            <Text className="numberDay">5</Text>
+                            <Text className="numberDayMain">5</Text>
                         </Div>
                     </Div>
                     <Div className="saturday">
                         <Text className="textDays">сб</Text>
                         <Div className="dayCard">
-                            <Text className="numberDay">6</Text>
+                            <Text className="numberDayMain">6</Text>
                         </Div>
                     </Div>
                     <Div className="sunday">
                         <Text className="textDays">вс</Text>
                         <Div className="dayCard">
-                            <Text className="numberDay">7</Text>
+                            <Text className="numberDayMain">7</Text>
                         </Div>
                     </Div>
                     <Link><Div className="nextArrow"></Div></Link>

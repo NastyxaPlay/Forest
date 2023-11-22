@@ -1,0 +1,192 @@
+.mainCalendar{
+    background: #FFF;
+    width: 375px;
+    height: 667px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 10px;
+}
+
+.titleCalendar{
+    color: #005020;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 31px;
+    padding: 0;
+}
+
+.mainCardCalendar{
+    background: linear-gradient(180deg, #A1BB8B 0%, #3D5F4C 100%);
+    width: 326px;
+    height: 394.983px;
+    border-radius: 20px;
+    margin-top: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.textCal1{
+    color: #005020;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.textCal2{
+    color: #3C5F4C;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 7px;
+    padding: 0;
+}
+
+.seeNoticeButton{
+    border-radius: 9px;
+    background: #3C5F4C;
+    width: 289px;
+    height: 40px;
+    color: #FFF4CE;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.seeNoticeButtonLink{
+    z-index: 1;
+}
+
+.dateCalendar{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 21px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.dateCalendar > div{
+    padding: 0;
+    
+    text-align: center;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.numberDay{
+    font-size: 48px;
+    height: 45px;
+    color: #FFF;
+    padding: 0;
+}
+
+.mouthCalendar{
+    font-size: 32px;
+    color: #FCF2E6;
+    padding: 0;
+}
+
+.datesNumber{
+    margin-top: 13px;
+    width: 289.283px;
+    height: 20px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 37.5px);
+    gap: 4px;
+    margin-right: 2px;
+}
+
+.datesNumber > :first-child{
+    padding: 0;
+}
+
+.datesNumber div{
+    color: #FFF;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+}
+
+.itogCalendarDates{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.itogCalendar{
+    width: 289.283px;
+    height: 268.143px;
+    display: grid;
+    grid-template-columns: repeat(7, 37.5px);
+    grid-template-rows: repeat(6, 41px);
+    padding: 0;
+    gap: 4px;
+}
+
+.firstDay{
+    grid-column: 7;
+}
+
+.itogCalendar button{
+    padding: 0;
+}
+
+.itogCalendar button{
+    color: #FFF;
+    text-align: right;
+    font-family: Comfortaa;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: #FCF2E6 1px solid;
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding: 0;
+}
+
+.itogCalendar button div{
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}

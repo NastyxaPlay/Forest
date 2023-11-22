@@ -1,0 +1,51 @@
+.mainTakePhoto{
+    width: 375px;
+    height: 667px;
+    background: linear-gradient(180deg, #FEFEFD 0%, #ECF8FF 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.mainCardPhoto{
+    width: 331px;
+    height: 482px;
+    background: linear-gradient(180deg, #A0BA8A 0%, #3F604D 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 31px;
+    z-index: 1;
+    padding: 0;
+}
+
+.saveButtonPhoto{
+    border-radius: 9px;
+    background: #3C5F4C;
+    width: 196px;
+    height: 40px;
+    color: #FFF4CE;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.elipsePhoto{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 7px #3C5F4C solid;
+    margin-top: 18px;
+    padding: 0;
+}

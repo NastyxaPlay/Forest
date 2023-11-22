@@ -14,9 +14,9 @@
     padding: 0;
 }
 
-.vkuiDiv > :not(:first-child){
+/* .vkuiDiv > :not(:first-child){
     padding: 0;
-}
+} */
 
 .vkuiDiv:hover{
     text-decoration: none;
@@ -126,7 +126,7 @@
     justify-content: flex-end;
 }
 
-.numberDay{
+.numberDayMain{
     font-family: Comfortaa;
     font-size: 10px;
     font-weight: 700;

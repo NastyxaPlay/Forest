@@ -11,6 +11,8 @@ import GalleryMoodPage from './panels/galleryMoodPage';
 import GrafEmPage from './panels/grafEmPage'
 import ThingsWithPhotoCalendarPage from './panels/ThingsWithPhotoCalendarPage';
 import ThingsCalendarPage from './panels/ThingsCalendarPage';
+import TakePhotoPage from './panels/takePhotoPage';
+import CalendarPage from './panels/calendarPage';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -39,7 +41,7 @@ const App = () => {
 					<SplitLayout popout={popout}>
 						<SplitCol>
 							<View activePanel={activePanel}>
-								<MyThingsPage id={activePanel}/>
+								<ChoiceEmPage id={activePanel}/>
 							</View>
 						</SplitCol>
 					</SplitLayout>
