@@ -1,7 +1,11 @@
 import {Panel, Div, Title, Text, Link, Image} from "@vkontakte/vkui";
 import './css/ThingsCalendarPage.css';
 
+import { useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
+
 const ThingsCalendarPage = () =>{
+
+    const routeNavigator = useRouteNavigator();
 
     return(
         <Panel id="home"> 
@@ -16,7 +20,7 @@ const ThingsCalendarPage = () =>{
                 <Div className="rectangleImage">
                     <Div className="imageThingsCalendar"></Div>
                 </Div>
-                <Link className="linkButtonThCal"><Div className="buttonThingsCalendar">Вернуться</Div></Link>
+                <Link onClick={()=> routeNavigator.push('/calendar')} className="linkButtonThCal"><Div className="buttonThingsCalendar">Вернуться</Div></Link>
                 <Div className="backVetkaNiz"></Div>
             </Div>
         </Panel>

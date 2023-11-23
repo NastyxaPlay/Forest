@@ -183,6 +183,7 @@
     padding: 0;
     justify-content: space-between;
     margin-bottom: 29px;
+    position: relative;
 }
 
 .bad-good{
@@ -212,11 +213,12 @@
     background: linear-gradient(90deg, #F31D1C 0%, #F6F3EA 50%, #FFED59 100%);
     display: flex;
     flex-direction: row;
+    
 }
 
 .progress div{
     width: 19px;
-    border-right: 1px #005020 solid;
+    /* border-right: 1px #005020 solid; */
     padding: 0;
 }
 
@@ -228,7 +230,7 @@
     border-right: none;
 }
 
-.continueButton{
+.continueButtonMain{
     width: 156px;
     height: 30px;
     border-radius: 9px;
@@ -243,4 +245,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.numbersMoodTrackMain{
+    display: flex;
+    flex-direction: row;
+    color: #D2DDE0;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.numbersMoodTrackMain div{
+    padding: 0;
+}
+
+.numbersMoodTrackMain > :first-child{
+    margin-right: 9px;
+    color: #F31D1C;
+}
+
+.numbersMoodTrackMain > :last-child{
+    margin-left: 9px;
+    color: #FFED59;
+}
+
+.circleProgressMain{
+    background: #41634F;
+    width: 29px;
+    height: 29px;
+    border-radius: 100%;
+}
+
+.linkCircleProgressMain{
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    left: 43%;
 }

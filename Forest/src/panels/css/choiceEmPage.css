@@ -78,6 +78,15 @@
     align-items: center;
     justify-content: flex-end;
     margin-top: 25px;
+    transition-duration: 0.5s;
+}
+
+.mainCardChoice > div:hover{
+    /* outline: white 2px solid;
+    border-radius: 10px; */
+    transform: scale(1.4);
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .mainCardChoice > div > div{

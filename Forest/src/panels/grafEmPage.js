@@ -1,7 +1,10 @@
 import {Panel, Div, Title, Text, Link} from "@vkontakte/vkui";
 import './css/grafEmPage.css';
+import { useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
 
 const grafEmPage = () =>{
+
+    const routeNavigator = useRouteNavigator();
 
     return(
         <Panel id="home"> 
@@ -50,7 +53,7 @@ const grafEmPage = () =>{
                         </Div>
                     </Div>
                 </Div>
-                <Link className="linkGrafButton"><Div className="buttonBackGraf">Вернуться</Div></Link>
+                <Link onClick={()=> routeNavigator.push('/')} className="linkGrafButton"><Div className="buttonBackGraf">Вернуться</Div></Link>
                 <Div className="grafMount"></Div>
             </Div>
         </Panel>

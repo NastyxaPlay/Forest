@@ -2,7 +2,11 @@ import React, {useState} from "react";
 import {Panel, Div, Title, Text, Link} from "@vkontakte/vkui";
 import './css/myThingsPage.css';
 
+import { useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
+
 const myThingsPage = () =>{
+
+    const routeNavigator = useRouteNavigator();
 
     return(
         <Panel id="home"> 
@@ -18,8 +22,8 @@ const myThingsPage = () =>{
                     <Link><Div className="stateEm2">Апатия</Div></Link>
                     <Link><Div className="stateEm3">Равнодушие</Div></Link>
                 </Div>
-                <Link><Div className="takePhoto">Сделать фото</Div></Link>
-                <Link><Div className="saveWithoutPhoto">Сохранить без фото</Div></Link>
+                <Link onClick={()=> routeNavigator.push('/photo')}><Div className="takePhoto">Сделать фото</Div></Link>
+                <Link onClick={()=> routeNavigator.push('/')}><Div className="saveWithoutPhoto">Сохранить без фото</Div></Link>
                 <Div className="vetNiz"></Div>
             </Div>
         </Panel>

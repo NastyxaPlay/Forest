@@ -2,7 +2,11 @@ import React, {useState} from "react";
 import {Panel, Div, Title, Text, Link} from "@vkontakte/vkui";
 import './css/takePhotoPage.css';
 
+import { useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
+
 const takePhotoPage = () =>{
+
+    const routeNavigator = useRouteNavigator();
 
     return(
         <Panel id="home"> 
@@ -12,7 +16,7 @@ const takePhotoPage = () =>{
                     
                 </Div>
                 <Div className="elipsePhoto"></Div>
-                <Div className="saveButtonPhoto">Сохранить</Div>
+                <Link className="saveButtonPhotoLink" onClick={()=> routeNavigator.push('/')}><Div className="saveButtonPhoto">Сохранить</Div></Link>
                 <Div className="backVetkaNiz"></Div>
             </Div>
         </Panel>

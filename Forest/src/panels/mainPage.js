@@ -1,8 +1,12 @@
 import React, {useState} from "react";
 import {Panel, Div, Title, Text, Link} from "@vkontakte/vkui";
 import './css/mainPage.css';
+import { useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
+
 
 const MainPage = () =>{
+
+    const routeNavigator = useRouteNavigator();
 
     return(
         <Panel id="home"> 
@@ -75,14 +79,29 @@ const MainPage = () =>{
                             <Div></Div>
                             <Div></Div>
                             <Div></Div>
+                           
+                        </Div>
+                        <Link className="linkCircleProgressMain"><Div className="circleProgressMain"></Div></Link>
+                        <Div className="numbersMoodTrackMain">
+                            <Div>5</Div>
+                            <Div>4</Div>
+                            <Div>3</Div>
+                            <Div>2</Div>
+                            <Div>1</Div>
+                            <Div>0</Div>
+                            <Div>1</Div>
+                            <Div>2</Div>
+                            <Div>3</Div>
+                            <Div>4</Div>
+                            <Div>5</Div>
                         </Div>
                     </Div>
-                   <Link><Div className="continueButton">Продолжить</Div></Link>
+                   <Link onClick={()=> routeNavigator.push('/choose')}><Div className="continueButtonMain">Продолжить</Div></Link>
                 </Div>
                 <Div className="menuButtons">
-                    <Link><Div className="galery"></Div></Link>
-                    <Link><Div className="grafik"></Div></Link>
-                    <Link><Div className="calendary"></Div></Link>
+                    <Link onClick={()=> routeNavigator.push('/galery')}><Div className="galery"></Div></Link>
+                    <Link onClick={()=> routeNavigator.push('/grafik')}><Div className="grafik"></Div></Link>
+                    <Link onClick={()=> routeNavigator.push('/calendar')}><Div className="calendary"></Div></Link>
                 </Div>
             </Div>
         </Panel>

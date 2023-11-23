@@ -2,7 +2,11 @@ import React, {useState} from "react";
 import {Panel, Div, Title, Text, Link} from "@vkontakte/vkui";
 import './css/calendarPage.css';
 
+import { useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
+
 const calendarPage = () =>{
+
+    const routeNavigator = useRouteNavigator();
 
     return(
         <Panel id="home"> 
@@ -61,7 +65,7 @@ const calendarPage = () =>{
                 </Div>
                 <Div className="textCal1">В этот день я был...</Div>
                 <Div className="textCal2">Нейтрален</Div>
-                <Link className="seeNoticeButtonLink"><Div className="seeNoticeButton">Посмотреть заметку за день</Div></Link>
+                <Link onClick={()=> routeNavigator.push('/calendarthings')}className="seeNoticeButtonLink"><Div className="seeNoticeButton">Посмотреть заметку за день</Div></Link>
                 <Div className="backVetkaNiz"></Div>
             </Div>
         </Panel>

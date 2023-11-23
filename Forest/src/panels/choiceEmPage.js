@@ -1,8 +1,12 @@
 import React, {useState} from "react";
 import {Panel, Div, Title, Text, Link} from "@vkontakte/vkui";
 import './css/choiceEmPage.css';
+import { useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
+
 
 const choiceEmPage = () =>{
+
+    const routeNavigator = useRouteNavigator();
 
     return(
         <Panel id="home"> 
@@ -33,7 +37,7 @@ const choiceEmPage = () =>{
                         <Text>Страх</Text>
                     </Div>
                 </Div>
-                <Link className="linkEmChoiceButton"><Div className="continueButtonChoice">Продолжить</Div></Link>
+                <Link onClick={()=> routeNavigator.push('/mythings')} className="linkEmChoiceButton"><Div className="continueButtonChoice">Продолжить</Div></Link>
                 <Div className="backVetkaNiz"></Div>
             </Div>
         </Panel>

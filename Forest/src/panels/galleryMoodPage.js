@@ -1,7 +1,10 @@
 import {Panel, Div, Title, Text, Link} from "@vkontakte/vkui";
 import './css/galleryMoodPage.css';
+import { useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
 
 const galleryMoodPage = () =>{
+
+    const routeNavigator = useRouteNavigator();
 
     return(
         <Panel id="home"> 
@@ -30,7 +33,7 @@ const galleryMoodPage = () =>{
                         </Div>
                     </Div>
                 </Div>
-                <Link className="buttonBackLink"><Div className="buttonBack">Вернуться</Div></Link>
+                <Link onClick={()=> routeNavigator.push('/')} className="buttonBackLink"><Div className="buttonBack">Вернуться</Div></Link>
             </Div>
         </Panel>
     );

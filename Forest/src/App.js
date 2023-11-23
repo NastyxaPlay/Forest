@@ -15,9 +15,9 @@ import TakePhotoPage from './panels/takePhotoPage';
 import CalendarPage from './panels/calendarPage';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { useActiveVkuiLocation, useGetPanelForView } from '@vkontakte/vk-mini-apps-router';
 
 const App = () => {
-	const [activePanel, setActivePanel] = useState('home');
 	const [fetchedUser, setUser] = useState(null);
 	const [popout, setPopout] = useState(<ScreenSpinner size='large' />);
 
@@ -30,9 +30,8 @@ const App = () => {
 		fetchData();
 	}, []);
 
-	const go = e => {
-		setActivePanel(e.currentTarget.dataset.to);
-	};
+	const {view: activeView} = useActiveVkuiLocation();
+	const activePanel = useGetPanelForView('default_view');
 
 	return (
 		<ConfigProvider>
@@ -40,8 +39,15 @@ const App = () => {
 				<AppRoot>
 					<SplitLayout popout={popout}>
 						<SplitCol>
-							<View activePanel={activePanel}>
-								<GrafEmPage id={activePanel}/>
+							<View activePanel={activePanel} id={activeView}>
+								<MainPage id={activePanel} nav="home_panel"/>
+								<GrafEmPage id={activePanel} nav="grafik_panel"/>
+								<CalendarPage id={activePanel} nav="calendar_panel"/>
+								<GalleryMoodPage id={activePanel} nav="galery_panel"/>
+								<ChoiceEmPage id={activePanel} nav="choose_panel"/>
+								<MyThingsPage id={activePanel} nav="mythings_panel"/>
+								<ThingsCalendarPage id={activePanel} nav="calendarthings_panel"/>
+								<TakePhotoPage id={activePanel} nav="photo_panel"/>
 							</View>
 						</SplitCol>
 					</SplitLayout>
