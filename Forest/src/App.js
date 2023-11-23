@@ -41,7 +41,7 @@ const App = () => {
 					<SplitLayout popout={popout}>
 						<SplitCol>
 							<View activePanel={activePanel}>
-								<ChoiceEmPage id={activePanel}/>
+								<GrafEmPage id={activePanel}/>
 							</View>
 						</SplitCol>
 					</SplitLayout>

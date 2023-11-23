@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .textDivQue{
@@ -36,33 +37,34 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     margin-top: 33px;
+    padding-top: 23px;
+    gap: 18px;
+    z-index: 1;
 }
 
 .continueButtonChoice{
     width: 156px;
     height: 30px;
     border-radius: 9px;
-    background: #9FB98A;
+    background: #3C5F4C;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 49px;
-}
-
-.continueButtonTextChoice{
-    font-weight: bold;
-    color: #005020;
-    font-family:Comfortaa;
+    color: #FFF4CE;
+    text-align: center;
+    font-family: Comfortaa;
     font-size: 16px;
+    font-style: normal;
     font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0em;
-    margin-top: 3px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .continueButtonTextChoice:hover{
@@ -73,17 +75,16 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    height: 108px;
-    width: 100px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 25px;
 }
 
-.mainCardChoice > div div{
+.mainCardChoice > div > div{
     padding: 0;
-    height: 90px;
-    width: 90px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
 }
 
 .mainCardChoice > div span{
@@ -93,24 +94,65 @@
     line-height: 13px;
     letter-spacing: 0em;
     text-align: center;
+    margin-top: 5px;
+    color: white;
 }
 
 .neytral{
     background-image: url(../../img/заяцНейтр.svg);
+    width: 58px;
+    height: 101px;
+}
+
+.neytralCard{
+    width: 85px;
+    height: 116px;
 }
 
 .sad{
     background-image: url(../../img/заяцГрусть.svg);
+    width: 99px;
+    height: 72px;
+}
+
+.sadCard{
+    width: 99px;
+    height: 116px;
 }
 
 .angry{
     background-image: url(../../img/заяцЗлой.svg);
+    width: 69px;
+    height: 89px;
+}
+
+.angryCard{
+    width: 69px;
+    height: 116px;
 }
 
 .happy{
     background-image: url(../../img/заяцРадость.svg);
+    width: 86px;
+    height: 108px;
+}
+
+.happyCard{
+    width: 86px;
+    height: 116px;
 }
 
 .fear{
     background-image: url(../../img/заяцСтрах.svg);
+    width: 117px;
+    height: 70px;
+}
+
+.fearCard{
+    width: 117px;
+    height: 116px;
+}
+
+.linkEmChoiceButton{
+    z-index: 1;
 }

@@ -9,6 +9,7 @@
     padding: 16px;
     padding-top: 0;
     padding-bottom: 0;
+    position: relative;
 }
 
 .titleGraf{
@@ -133,6 +134,7 @@
     justify-content: center;
     flex-direction: row;
     padding: 0;
+    z-index: 1;
 }
 
 .gridMood{
@@ -147,7 +149,14 @@
     padding: 0px 23px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
     height: 93%;
+}
+
+.happyGrafEm{
+    width: 50px;
+    height: 50px;
+    background-color: #005020;
 }
 
 .gridSetka div{
@@ -199,4 +208,21 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.grafMount{
+    width: 375px;
+    height: 345px;
+    background-image: url("../../img/гора.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 14px;
+    right: 19px;
+    transform: scale(1.1);
+    z-index: 0;
+    padding: 0;
+}
+
+.linkGrafButton{
+    z-index: 1;
 }

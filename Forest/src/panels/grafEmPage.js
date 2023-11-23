@@ -50,7 +50,8 @@ const grafEmPage = () =>{
                         </Div>
                     </Div>
                 </Div>
-                <Link><Div className="buttonBackGraf">Вернуться</Div></Link>
+                <Link className="linkGrafButton"><Div className="buttonBackGraf">Вернуться</Div></Link>
+                <Div className="grafMount"></Div>
             </Div>
         </Panel>
     );
