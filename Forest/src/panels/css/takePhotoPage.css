@@ -1,6 +1,6 @@
 .mainTakePhoto{
     width: 375px;
-    height: 667px;
+    height: 676px;
     background: linear-gradient(180deg, #FEFEFD 0%, #ECF8FF 100%);
     display: flex;
     flex-direction: column;

@@ -216,6 +216,20 @@
     
 }
 
+.circleProgressMain{
+    background: #41634F;
+    width: 29px;
+    height: 29px;
+    border-radius: 100%;
+}
+
+.linkCircleProgressMain{
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    left: 43%;
+}
+
 .progress div{
     width: 19px;
     /* border-right: 1px #005020 solid; */
@@ -278,16 +292,3 @@
     color: #FFED59;
 }
 
-.circleProgressMain{
-    background: #41634F;
-    width: 29px;
-    height: 29px;
-    border-radius: 100%;
-}
-
-.linkCircleProgressMain{
-    padding: 0;
-    position: absolute;
-    top: 30%;
-    left: 43%;
-}

@@ -11,7 +11,7 @@ bridge.send("VKWebAppInit");
 
 const router = createHashRouter([
   {
-    path: '/',
+    path: 'home',
     panel: 'home_panel',
     view: 'default_view'
   },
@@ -48,6 +48,16 @@ const router = createHashRouter([
   {
     path: 'calendarthings',
     panel: 'calendarthings_panel',
+    view: 'default_view'
+  },
+  {
+    path: '/',
+    panel: 'hello_panel',
+    view: 'default_view'
+  },
+  {
+    path: 'test',
+    panel: 'test_panel',
     view: 'default_view'
   },
 ]);

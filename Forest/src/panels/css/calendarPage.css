@@ -1,12 +1,11 @@
 .mainCalendar{
     background: #FFF;
     width: 375px;
-    height: 667px;
+    height: 675px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 0 10px;
 }
 
 .titleCalendar{

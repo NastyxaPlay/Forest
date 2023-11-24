@@ -53,7 +53,7 @@ const grafEmPage = () =>{
                         </Div>
                     </Div>
                 </Div>
-                <Link onClick={()=> routeNavigator.push('/')} className="linkGrafButton"><Div className="buttonBackGraf">Вернуться</Div></Link>
+                <Link onClick={()=> routeNavigator.push('/home')} className="linkGrafButton"><Div className="buttonBackGraf">Вернуться</Div></Link>
                 <Div className="grafMount"></Div>
             </Div>
         </Panel>

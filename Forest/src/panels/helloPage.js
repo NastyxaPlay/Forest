@@ -3,7 +3,11 @@ import bridge from '@vkontakte/vk-bridge';
 import {Panel, Div, Title} from "@vkontakte/vkui";
 import './css/helloPage.css';
 
+import { useRouteNavigator } from "@vkontakte/vk-mini-apps-router";
+
 const HelloPage = () =>{
+
+    const routeNavigator = useRouteNavigator();
 
     const [fetchedUser, setUser] = useState(null);
 
@@ -17,7 +21,7 @@ const HelloPage = () =>{
 
     return(
         <Panel id="home"> 
-            <Div className="hello">
+            <Div className="hello" onClick={()=> routeNavigator.push('/home')}>
                 {fetchedUser && <Title className="user_name">Привет, {fetchedUser.first_name}!</Title>}
                 <Div className="obl1"></Div>
                 <Div className="obl2"></Div>

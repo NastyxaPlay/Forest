@@ -16,7 +16,7 @@ const takePhotoPage = () =>{
                     
                 </Div>
                 <Div className="elipsePhoto"></Div>
-                <Link className="saveButtonPhotoLink" onClick={()=> routeNavigator.push('/')}><Div className="saveButtonPhoto">Сохранить</Div></Link>
+                <Link className="saveButtonPhotoLink" onClick={()=> routeNavigator.push('/home')}><Div className="saveButtonPhoto">Сохранить</Div></Link>
                 <Div className="backVetkaNiz"></Div>
             </Div>
         </Panel>

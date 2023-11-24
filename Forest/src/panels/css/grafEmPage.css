@@ -7,8 +7,6 @@
     flex-direction: column;
     align-items: center;
     padding: 16px;
-    padding-top: 0;
-    padding-bottom: 0;
     position: relative;
 }
 
@@ -217,8 +215,8 @@
     position: absolute;
     background-repeat: no-repeat;
     bottom: 14px;
-    right: 19px;
-    transform: scale(1.1);
+    right: 16px;
+    transform: scale(1.085);
     z-index: 0;
     padding: 0;
 }

@@ -61,7 +61,7 @@ const MainPage = () =>{
                     <Title className="textFeel" level="2">Как ты себя чувствуешь?</Title>
                 </Div>
                 <Div className="mainCard">
-                    <Div className="mainAnimal"></Div>
+                    <Div className="mainAnimal" onClick={()=> routeNavigator.push('/test')}></Div>
                     <Div className="moodTrack">
                         <Div className="bad-good">
                             <Div className="bad">Плохо</Div>

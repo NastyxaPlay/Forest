@@ -9,7 +9,7 @@ const myThingsPage = () =>{
     const routeNavigator = useRouteNavigator();
 
     return(
-        <Panel id="home"> 
+        <Panel id="home">
             <Div className="mainThings">
                 <Div className="vetVerx"></Div>
                 <Div className="myThings">Мои мысли...</Div>
@@ -23,7 +23,7 @@ const myThingsPage = () =>{
                     <Link><Div className="stateEm3">Равнодушие</Div></Link>
                 </Div>
                 <Link onClick={()=> routeNavigator.push('/photo')}><Div className="takePhoto">Сделать фото</Div></Link>
-                <Link onClick={()=> routeNavigator.push('/')}><Div className="saveWithoutPhoto">Сохранить без фото</Div></Link>
+                <Link onClick={()=> routeNavigator.push('/home')}><Div className="saveWithoutPhoto">Сохранить без фото</Div></Link>
                 <Div className="vetNiz"></Div>
             </Div>
         </Panel>

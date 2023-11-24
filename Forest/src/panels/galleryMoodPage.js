@@ -33,7 +33,7 @@ const galleryMoodPage = () =>{
                         </Div>
                     </Div>
                 </Div>
-                <Link onClick={()=> routeNavigator.push('/')} className="buttonBackLink"><Div className="buttonBack">Вернуться</Div></Link>
+                <Link onClick={()=> routeNavigator.push('/home')} className="buttonBackLink"><Div className="buttonBack">Вернуться</Div></Link>
             </Div>
         </Panel>
     );

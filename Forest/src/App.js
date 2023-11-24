@@ -13,6 +13,7 @@ import ThingsWithPhotoCalendarPage from './panels/ThingsWithPhotoCalendarPage';
 import ThingsCalendarPage from './panels/ThingsCalendarPage';
 import TakePhotoPage from './panels/takePhotoPage';
 import CalendarPage from './panels/calendarPage';
+import Test from './panels/test';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { useActiveVkuiLocation, useGetPanelForView } from '@vkontakte/vk-mini-apps-router';
@@ -20,6 +21,21 @@ import { useActiveVkuiLocation, useGetPanelForView } from '@vkontakte/vk-mini-ap
 const App = () => {
 	const [fetchedUser, setUser] = useState(null);
 	const [popout, setPopout] = useState(<ScreenSpinner size='large' />);
+
+	const [welcomeScreenVisible, setWelcomeScreenVisible] = useState(false);
+
+	const hasSeenWelcomeScreen =() =>{
+		const seen = localStorage.getItem("welcomeScreenShown");
+		if(!seen){
+			localStorage.setItem("welcomeScreenShown", "true");
+			return false;
+		}
+		return true;
+	}
+
+	useEffect(()=>{
+		setWelcomeScreenVisible(!hasSeenWelcomeScreen());
+	}, []);
 
 	useEffect(() => {
 		async function fetchData() {
@@ -40,6 +56,7 @@ const App = () => {
 					<SplitLayout popout={popout}>
 						<SplitCol>
 							<View activePanel={activePanel} id={activeView}>
+								<HelloPage id={activePanel} nav="hello_panel"/>
 								<MainPage id={activePanel} nav="home_panel"/>
 								<GrafEmPage id={activePanel} nav="grafik_panel"/>
 								<CalendarPage id={activePanel} nav="calendar_panel"/>
@@ -48,6 +65,7 @@ const App = () => {
 								<MyThingsPage id={activePanel} nav="mythings_panel"/>
 								<ThingsCalendarPage id={activePanel} nav="calendarthings_panel"/>
 								<TakePhotoPage id={activePanel} nav="photo_panel"/>
+								<Test id={activePanel} nav="test_panel"/>
 							</View>
 						</SplitCol>
 					</SplitLayout>
