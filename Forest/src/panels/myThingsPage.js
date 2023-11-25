@@ -8,6 +8,12 @@ const myThingsPage = () =>{
 
     const routeNavigator = useRouteNavigator();
 
+    function onButtonClick(className){
+        let element = document.querySelector(className);
+
+        console.log(element);
+    }
+
     return(
         <Panel id="home">
             <Div className="mainThings">
